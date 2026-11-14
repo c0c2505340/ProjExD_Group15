@@ -20,16 +20,16 @@ WINDOW_TITLE = "SPACE SHOOTER"
 BASE_DIR = Path(__file__).resolve().parent
 ASSET_DIR = BASE_DIR / "assets"
 
-BACKGROUND_IMAGE = ASSET_DIR / "background.png"
-PLAYER_IMAGE = ASSET_DIR / "player.png"
-ENEMY_IMAGE = ASSET_DIR / "enemy.png"
-BOSS_IMAGE = ASSET_DIR / "boss.png"
-STAR_IMAGE = ASSET_DIR / "star.png"
-BOMB_IMAGE = ASSET_DIR / "bakuhatsu_01.png"
-NORMAL_BGM = ASSET_DIR / "sounds" / "normal_bgm.mp3"
-BOMB_SE = ASSET_DIR / "sounds" / "mini_bomb2.mp3"
-BOSS_BGM = ASSET_DIR / "sounds" / "boss_bgm.mp3"
-CLEAR_BGM = ASSET_DIR / "sounds" / "clear_bgm.mp3"
+BACKGROUND_IMAGE = str(ASSET_DIR / "background.png")
+PLAYER_IMAGE = str(ASSET_DIR / "player.png")
+ENEMY_IMAGE = str(ASSET_DIR / "enemy.png")
+BOSS_IMAGE = str(ASSET_DIR / "boss.png")
+STAR_IMAGE = str(ASSET_DIR / "star.png")
+BOMB_IMAGE = str(ASSET_DIR / "bakuhatsu_01.png")
+NORMAL_BGM = str(ASSET_DIR / "sounds" / "normal_bgm.mp3")
+BOMB_SE = str(ASSET_DIR / "sounds" / "mini_bomb2.mp3")
+BOSS_BGM = str(ASSET_DIR / "sounds" / "boss_bgm.mp3")
+CLEAR_BGM = str(ASSET_DIR / "sounds" / "clear_bgm.mp3")
 
 PLAYER_SIZE = (64, 64)
 PLAYER_SPEED = 5
@@ -77,10 +77,10 @@ ITEM_INVINCIBLE = 2
 ITEM_RAPID = 3
 
 ITEM_IMAGES = {
-    ITEM_HEAL: ASSET_DIR / "item_heal.png",
-    ITEM_STUN: ASSET_DIR / "item_stun.png",
-    ITEM_INVINCIBLE: ASSET_DIR / "item_invincible.png",
-    ITEM_RAPID: ASSET_DIR / "item_rapid.png",
+    ITEM_HEAL: str(ASSET_DIR / "item_heal.png"),
+    ITEM_STUN: str(ASSET_DIR / "item_stun.png"),
+    ITEM_INVINCIBLE: str(ASSET_DIR / "item_invincible.png"),
+    ITEM_RAPID: str(ASSET_DIR / "item_rapid.png"),
 }
 ITEM_COLORS = {
     ITEM_HEAL: (50, 255, 50),
