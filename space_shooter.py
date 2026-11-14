@@ -539,6 +539,13 @@ class Game:
         self.game_over = False
         self.boss_bgm_playing = False
         self.boss_kill = False
+        try:
+            pg.mixer.init()
+            pg.mixer.music.load(NORMAL_BGM)
+            pg.mixer.music.play(loops=-1)
+        except pg.error:
+            pass
+
 
     def get_shot_interval(self, now):
         interval = PLAYER_SHOT_INTERVAL
